@@ -1,0 +1,93 @@
+/* Start Footer */
+.footer {
+    background-color: #e2e2e2;
+    overflow: hidden;
+    padding-top: 30;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    @media #{$maxMobile} {
+        text-align: center;
+    }
+        .gallery,
+        .info,
+        .contact {
+            float: $float-left;
+        }
+        
+        .gallery {
+            @media #{$minSmall} {
+                width: 100%;
+            }
+            @media #{$minM} {
+                width: 50%;
+            }
+            .img-box {
+                overflow: hidden;
+                img {
+                    float: $float-left;
+                    width: 150px;
+                    height: 150px;
+                }
+                .m {
+                    margin-top: 10px;
+                }
+                .text {
+                    float: $float-left;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc(100% - 180px);
+                    h4 {
+                        color: $redColoe;
+                    }
+                    p {
+                        color: $greyColor;
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+        .info {
+            @media #{$minSmall} {
+                width: 50%;
+            }
+            
+            @media #{$minM} {
+                width: 25%;
+            }
+            @media #{$maxMobile} {
+                text-align: center;
+                margin-left: 60px;
+            }
+            ul li {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            .working-p {
+                color: $redColoe;
+            }
+        }
+        .contact {
+            @media #{$minSmall} {
+                width: 50%;
+            }
+            
+            @media #{$minM} {
+                width: 25%;
+            }
+            .textt,
+            .email,
+            textarea {
+                margin-bottom: 10px;
+                border: 2px solid $redColoe;
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+        .section-title {
+            color: #000;
+            font-weight: bold;
+        }
+}
+
+/* End Footer */

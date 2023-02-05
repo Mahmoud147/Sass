@@ -1,0 +1,131 @@
+/* Start Slider */
+.slider {
+    blockquote {
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        color: #5e5e5e;
+        font-family: Tahoma, Arial;
+        width: 70%;
+        margin: 30px auto;
+    }
+    img {
+        max-width: 100%;
+    }
+    .bullets {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #DDD;
+            border-radius: 50%;
+            cursor: pointer;
+            &.active,
+            &:hover {
+                border: 2px solid #000;
+                background-color: white;
+            }
+        }
+    }
+}
+/* End Slider */
+
+/* Start Services */
+.services {
+    .service-box {
+        @media #{$minM} {
+            float: $float-left;
+            width: (100% /3);
+            &:not(:last-of-type) {
+            padding-right: 20px;
+            }
+        }
+        @media #{$maxMobile} {
+            width: 100%;
+            float: none;
+            i {
+                display: block;
+                margin-bottom: 15px;
+
+            }
+        }
+        .service-title {
+            color: #666;
+            i {
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+
+            }
+        }
+        .service-desc{
+            color: #777;
+            line-height: 1.6;
+        }
+        .link{
+            color: $redColoe;
+            text-decoration: none;
+
+        }
+    }
+}
+/* End Services */
+
+
+/* Start Our Players */
+.our-players {
+    .player-box {
+        @media #{$maxMobile} {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% /2);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        @media #{$minM} {
+            width: (100% /2);
+            text-align: left;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$minL} {
+            width: calc(100% /4);
+        }
+        .im {
+            max-width: 100%;
+        }
+        .player-title {
+            color: #666;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .player-desc {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .player-link {
+            color: $redColoe;
+            text-decoration: none;
+
+        }
+    }
+}
+
+/* End Our Players */
+
+
+
+
